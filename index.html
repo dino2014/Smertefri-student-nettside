@@ -1,10 +1,82 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <title>Smertefri-Student</title>
-  </head>
-  <body>
-    <h1>Velkommen til Smertefri Student</h1>
-    <p>Nettsiden er nå live!</p>
-  </body>
+<html lang="no">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>StudentFysio – Studenter som hjelper deg videre</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header class="header">
+    <div class="logo-wrapper">
+      <img src="assets/Logo.png" alt="StudentFysio logo" class="logo" />
+      <span class="brand-name">StudentFysio</span>
+    </div>
+    <nav class="nav">
+      <a href="#how">Hvordan fungerer det?</a>
+      <a href="#for-clients">For deg med smerter</a>
+      <a href="#for-students">For fysiostudenter</a>
+    </nav>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-content">
+      <h1>Få hjelp av fysioterapistudenter – raskt, trygt og rimelig</h1>
+      <p>
+        StudentFysio kobler deg med dyktige fysioterapistudenter som tilbyr veiledning, øvelser og ergonomiske råd – digitalt eller fysisk.
+      </p>
+      <div class="hero-buttons">
+        <button class="btn primary" onclick="scrollToSection('for-clients')">Jeg trenger hjelp</button>
+        <button class="btn secondary" onclick="scrollToSection('for-students')">Jeg er fysioterapistudent</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- HOW IT WORKS -->
+  <section id="how" class="section">
+    <h2>Hvordan fungerer StudentFysio?</h2>
+    <div class="cards">
+      <div class="card">
+        <h3>1. Beskriv problemet</h3>
+        <p>Fortell kort om smerter, situasjon og hva du ønsker hjelp med.</p>
+      </div>
+      <div class="card">
+        <h3>2. Match med student</h3>
+        <p>En godkjent fysioterapistudent tar kontakt og avtaler tid.</p>
+      </div>
+      <div class="card">
+        <h3>3. Få veiledning</h3>
+        <p>Digital eller fysisk konsultasjon – med konkrete råd og øvelser.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOR CLIENTS -->
+  <section id="for-clients" class="section alt">
+    <h2>For deg med smerter eller plager</h2>
+    <p class="section-text">
+      Du får rask og rimelig veiledning av fysioterapistudenter som er oppdatert på moderne kunnskap om smerte, bevegelse og trening.
+    </p>
+    <button class="btn primary">Snart: Legg ut annonse</button>
+  </section>
+
+  <!-- FOR STUDENTS -->
+  <section id="for-students" class="section">
+    <h2>For fysioterapistudenter</h2>
+    <p class="section-text">
+      Bygg erfaring, tjen penger og hjelp ekte mennesker med ekte problemer – samtidig som du utvikler din kliniske kompetanse.
+    </p>
+    <button class="btn secondary">Snart: Registrer deg som veileder</button>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <p>© <span id="year"></span> StudentFysio – utviklet av fysioterapistudent</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
 </html>
